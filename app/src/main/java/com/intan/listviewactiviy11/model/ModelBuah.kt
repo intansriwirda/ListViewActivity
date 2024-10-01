@@ -1,37 +1,58 @@
 package com.intan.listviewactiviy11.model
 
+import android.content.Context
 import com.intan.listviewactiviy11.R
 
 data class ModelBuah(
-    val image: Int,
-    val nama: String
+    val image : Int,
+    val nama : String,
+    val lokasi : String,
+    val deskripsi : String
 )
 
-object MockList {
+//mock data
 
-    fun getModel(): List<ModelBuah> {
-        val itemModel1 = ModelBuah(
-            image = R.drawable.apple,
-            nama = "Apple"
-        )
-        val itemModel2 = ModelBuah(
-            image = R.drawable.grapes,
-            nama = "Anggur"
-        )
-        val itemModel3 = ModelBuah(
-            image = R.drawable.orange,
-            nama = "Jeruk"
-        )
-        val itemModel4 = ModelBuah(
-            image = R.drawable.pear,
-            nama = "Pir"
-        )
-        val itemModel5 = ModelBuah(
-            image = R.drawable.strawberry,
-            nama = "Strawberry"
+object MockList{
+
+    fun getModel(contect: Context) : List<ModelBuah>{
+        val  itemModel1 = ModelBuah(
+            R.drawable.apple,
+            nama = "apple",
+            "indonesia",
+            contect.getString(R.string.st_apel)
         )
 
-        val itemList: ArrayList<ModelBuah> = ArrayList()
+        val  itemModel2 = ModelBuah(
+            R.drawable.grapes,
+            nama = "anggur",
+            "malaysia",
+            contect.getString(R.string.st_pear)
+        )
+
+        val  itemModel3 = ModelBuah(
+            R.drawable.orange,
+            nama = "jeruk",
+            "Australia",
+            contect.getString(R.string.st_jeruk)
+        )
+
+        val  itemModel4 = ModelBuah(
+            R.drawable.pear,
+            nama = "pear",
+            "Bali",
+            contect.getString(R.string.st_apel)
+        )
+
+        val  itemModel5 = ModelBuah(
+            R.drawable.strawberry,
+            nama = "strawbery",
+            "malaysia",
+            contect.getString(R.string.st_apel)
+        )
+
+
+
+        val itemList:ArrayList<ModelBuah> = ArrayList()
         itemList.add(itemModel1)
         itemList.add(itemModel2)
         itemList.add(itemModel3)
@@ -39,6 +60,6 @@ object MockList {
         itemList.add(itemModel5)
 
         return itemList
+
     }
 }
-

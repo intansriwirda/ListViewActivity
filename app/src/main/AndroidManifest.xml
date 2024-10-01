@@ -13,7 +13,19 @@
         android:theme="@style/Theme.ListViewActiviy11"
         tools:targetApi="31">
         <activity
+            android:name=".DetailBuah"
+            android:exported="false" />
+        <activity
             android:name=".RecycleBuahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecycleMovieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecycleMovie"
+            android:exported="false" />
+        <activity
+            android:name=".RecylceMovie"
             android:exported="false" />
         <activity
             android:name=".RecycleViewActivity"

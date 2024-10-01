@@ -1,5 +1,6 @@
 package com.intan.listviewactiviy11
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -11,42 +12,40 @@ import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
-
-        private lateinit var txtJudul: TextView
-        private lateinit var btnBuku: Button
-        private lateinit var btnList: Button
-        private lateinit var btnBuah: Button
+    private lateinit var  btnBuku : Button
+    private lateinit var btnBuah : Button
+    private lateinit var btnMovie : Button
 
 
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            WindowCompat.setDecorFitsSystemWindows(window, false)
-            setContentView(R.layout.activity_main)
+    @SuppressLint("MissingInflatedId")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_main)
 
-            txtJudul = findViewById(R.id.txtJudul)
-            btnBuku = findViewById(R.id.btnBuku)
-            btnList = findViewById(R.id.btnList)
-            btnBuah = findViewById(R.id.btnBuah)
+        btnBuku = findViewById(R.id.btnBuku)
+        btnBuah = findViewById(R.id.btnBuah)
+        btnMovie = findViewById(R.id.btnmovie)
 
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
 
-            btnList.setOnClickListener {
-                val intentToList = Intent(this, List::class.java)
-                startActivity(intentToList)
-            }
+        btnBuku.setOnClickListener(){
+            val intent = Intent(this@MainActivity, RecycleViewActivity::class.java)
+            startActivity(intent)
+        }
 
-            btnBuku.setOnClickListener {
-                val intentToRecycleView = Intent(this, RecycleViewActivity::class.java)
-                startActivity(intentToRecycleView)
-            }
-            btnBuah.setOnClickListener {
-                val intentToRecycleBuah = Intent(this, RecycleBuahActivity::class.java)
-                startActivity(intentToRecycleBuah)
-            }
+        btnBuah.setOnClickListener(){
+            val intent = Intent(this@MainActivity, RecycleBuahActivity::class.java)
+            startActivity(intent)
+        }
 
-            ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-                val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-                v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-                insets
-            }
+        btnMovie.setOnClickListener(){
+            val intent = Intent(this@MainActivity, RecycleMovieActivity::class.java)
+            startActivity(intent)
         }
     }
+}
