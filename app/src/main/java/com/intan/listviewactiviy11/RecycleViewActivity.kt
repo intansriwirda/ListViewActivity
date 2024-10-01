@@ -22,11 +22,11 @@ class RecycleViewActivity : AppCompatActivity() {
 
 // Define array data
         val listBuku = listOf(
-            ModelBuku(judul = "Buku Android Kotlin 2024", penerbit = "Asyifa Fahra"),
-            ModelBuku(judul = "Buku Android Kotlin 2024", penerbit = "syifa"),
-            ModelBuku(judul = "Buku Android Kotlin 2024", penerbit = "Asyifa"),
-            ModelBuku(judul = "Buku Android Kotlin 2024", penerbit = "Syifa Fahra"),
-            ModelBuku(judul = "Buku Android Kotlin 2024", penerbit = "Cipaa"),
+            ModelBuku(judul = "Buku Android Kotlin 2024", penerbit = "Intan sriwirda"),
+            ModelBuku(judul = "Buku Android Kotlin 2024", penerbit = "jaya"),
+            ModelBuku(judul = "Buku Android Kotlin 2024", penerbit = "intan sriwirda"),
+            ModelBuku(judul = "Buku Android Kotlin 2024", penerbit = "Jaya"),
+            ModelBuku(judul = "Buku Android Kotlin 2024", penerbit = "Intan sriwirda"),
         )
         val nBukuAdapter = BukuAdapter(listBuku)
         rv_data.apply {

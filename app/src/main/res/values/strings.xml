@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ListViewActiviy11</string>
+    <string name="st.anggur">Anggur merupakan salah satu tanaman yang hidup pada daerah dataran rendah.</string>
+
+    Anggur merupakan buah yang diolah dari telur buah berupa perdu merambat yang termasuk ke dalam keluarga Vitaceae.[1] Buah ini biasanya digunakan untuk membuat jus anggur, jelly, minuman anggur, minyak biji anggur dan kismis, atau dimakan langsung.[1] Buah ini juga dikenal karena mengandung banyak senyawa polifenol dan resveratol yang berperan aktif dalam berbagai metabolisme tubuh, serta mampu mencegah terbentuknya sel kanker dan berbagai penyakit lainnya.[2] Aktivitas ini juga terkait dengan adanya senyawa metabolit sekunder di dalam buah anggur yang berperan sebagai senyawa antioksidan yang mampu menangkal radikal bebas.
+    <string name="st.jeruk">Tanaman jeruk adalah tanaman buah tahunan yang berasal dari Asia. Cina dipercaya sebagai tempat pertama kali jeruk tumbuh. </string>
+    <string name="st.apel">Apel merupakan jenis buah-buahan, atau buah yang dihasilkan dari pohon apel. Buah apel biasanya berwarna merah kulitnya jika masak dan siap dimakan, tetapi bisa juga kulitnya berwarna hijau atau kuning. </string>
+
+    Orang pertama kali menanam apel di Asia Tengah. Saat ini, apel tumbuh di berbagai daerah di dunia dengan suhu udara yang lebih dingin.
+    <string name="st.pear">Pohon pir biasa berkepala lebar dan tingginya mencapai 13 meter (43 kaki) saat dewasa. Pohonnya relatif berumur panjang (50 hingga 75 tahun) dan dapat mencapai ukuran yang cukup besar kecuali jika dilatih dan dipangkas dengan hati-hati. </string>
 </resources>
